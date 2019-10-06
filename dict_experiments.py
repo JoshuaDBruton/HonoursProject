@@ -3,10 +3,10 @@ from online_dictionary_learning import odl			# Own implementation of dictionary 
 from comet_ml import Experiment 								#	For Comet.ml
 from utils import data_processing as dp					# For extracting HSI data and stuff
 
-data_sets=['Salinas','Indian_Pines', 'Pavia']						# Data set to use
-odl_iters_all=[[5000],[5000],[5000]]									# The maximum number of iterations for ODL
-atom_nums_all=[[220, 306, 408, 1000],[220, 300, 400, 1000],[120, 160, 206, 600]]										# Number of atoms in the data
-sparsities_all=[[2, 5, 10, 20], [2, 5, 10, 20], [2, 5, 10, 20]]												# Sparsity of the sparse coding step in DL
+data_sets=['Pavia']#['Salinas','Indian_Pines', 'Pavia']						# Data set to use
+odl_iters_all=[[10000]]#[[5000],[5000],[5000]]									# The maximum number of iterations for ODL
+atom_nums_all=[[120]]#[[220, 306, 408, 1000],[220, 300, 400, 1000],[120, 160, 206, 600]]										# Number of atoms in the data
+sparsities_all=[[2]]#[[2, 5, 10, 20], [2, 5, 10, 20], [2, 5, 10, 20]]												# Sparsity of the sparse coding step in DL
 shuffle=True
 comet=True												# Load experiment to comet
 save=True													# Save the dictionary in .npy file
